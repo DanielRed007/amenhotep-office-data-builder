@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "npx ts-node src/app.ts"
+    "server": "nodemon --exec ts-node src/app.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +16,8 @@
     "mongoose": "^7.6.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
