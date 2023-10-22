@@ -1,7 +1,7 @@
 import mongoose, { Document, Model, Schema } from 'mongoose';
 
 export interface IBuilding {
-  id: string;
+  _id?: string;
   name: string;
   nickname: string;
   floors: string[];
@@ -13,15 +13,14 @@ export interface IBuilding {
 }
 
 const BuildingSchema = new Schema<IBuilding>({
-  id: String,
-  name: String,
-  nickname: String,
+  name: {type: String, required: true},
+  nickname: {type: String, required: true},
   floors: [String],
-  status: String,
-  type: String,
-  address: String,
-  city: String,
-  country: String,
+  status: {type: String, required: true},
+  type: {type: String, required: true},
+  address: {type: String, required: true},
+  city: {type: String, required: true},
+  country: {type: String, required: true},
 });
 
 const Building = mongoose.model('Building', BuildingSchema);
