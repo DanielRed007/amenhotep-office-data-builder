@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "aa3ab4fb-7372-411c-a1a5-822b61b712b3",
+		"name": "amhenotep-builder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3943743"
+	},
+	"item": [
+		{
+			"name": "buildings",
+			"item": [
+				{
+					"name": "Get Buildings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/buildings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buildings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Building",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"string\",\n  \"name\": \"string\",\n  \"nickname\": \"string\",\n  \"floors\": \"string[]\",\n  \"status\": \"string\",\n  \"type\": \"string\",\n  \"address\": \"string\",\n  \"city\": \"string\",\n  \"country\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/buildings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buildings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
