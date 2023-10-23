@@ -1,10 +1,11 @@
-import mongoose, { Document, Model, Schema } from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
+import { IFloor } from './floor';
 
 export interface IBuilding {
   _id?: string;
   name: string;
   nickname: string;
-  floors: string[];
+  floors: IFloor[];
   status: string;
   type: string;
   address: string;
@@ -15,7 +16,7 @@ export interface IBuilding {
 const BuildingSchema = new Schema<IBuilding>({
   name: {type: String, required: true},
   nickname: {type: String, required: true},
-  floors: [String],
+  floors: {type: Array, required: true},
   status: {type: String, required: true},
   type: {type: String, required: true},
   address: {type: String, required: true},
