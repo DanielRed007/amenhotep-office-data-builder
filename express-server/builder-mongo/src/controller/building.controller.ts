@@ -1,15 +1,35 @@
 import { Request, Response } from 'express';
 import Building from '../model/building';
+import Floor from '../model/floor';
 
 export const createNewBuilding = async (req: Request, res: Response) => {
-    try {
-      const newBuilding = new Building(req.body);
-      const savedBuilding = await newBuilding.save();
-      res.status(201).json(savedBuilding);
-    } catch (error:any) {
-      res.status(400).json({ error: error.message });
+  try {
+    const buildingData = req.body;
+
+    const newBuilding = new Building(buildingData);
+
+    const floors = buildingData.floors;
+
+    const newFloors = [];
+    
+    for (let floorData of floors) {
+      const newFloor = new Floor({
+        ...floorData,
+        building_id: newBuilding._id,
+      });
+
+      await newFloor.save();
+      newFloors.push(newFloor);
     }
-}
+
+    newBuilding.floors = newFloors;
+
+    const savedBuilding = await newBuilding.save();
+    res.status(201).json(savedBuilding);
+  } catch (error: any) {
+    res.status(400).json({ error: error.message });
+  }
+};
 
 export const getBuildings = async (req: Request, res: Response) => {
     try {

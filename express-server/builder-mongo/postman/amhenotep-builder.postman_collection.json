@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "aa3ab4fb-7372-411c-a1a5-822b61b712b3",
+		"name": "amhenotep-builder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3943743"
+	},
+	"item": [
+		{
+			"name": "buildings",
+			"item": [
+				{
+					"name": "Get Buildings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/buildings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buildings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Building",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"string\",\n  \"nickname\": \"string\",\n  \"floors\": \"string[]\",\n  \"status\": \"string\",\n  \"type\": \"string\",\n  \"address\": \"string\",\n  \"city\": \"string\",\n  \"country\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/buildings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buildings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Building By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/buildings/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buildings",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Building by Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"The Aleister\",\n  \"nickname\": \"The Third\",\n  \"floors\": \"string[]\",\n  \"status\": \"string\",\n  \"type\": \"string\",\n  \"address\": \"string\",\n  \"city\": \"string\",\n  \"country\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/buildings/653538b49e49b5120c0ab8de",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buildings",
+								"653538b49e49b5120c0ab8de"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Building by Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/buildings/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"buildings",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Environment Variables for the Amenhotep Builder"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "65352de0c260038cdcf60abe",
+			"type": "string"
+		}
+	]
+}

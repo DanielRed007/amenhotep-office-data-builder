@@ -1,0 +1,500 @@
+[{
+  "_id": {
+    "$oid": "653597f2b3d9cba3d452df07"
+  },
+  "name": "The Aleister",
+  "nickname": "The Third",
+  "floors": [
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1A",
+      "desks": 20,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "653597f2b3d9cba3d452df08"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2A",
+      "desks": 15,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "653597f2b3d9cba3d452df0a"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3A",
+      "desks": 18,
+      "meeting_rooms": 1,
+      "_id": {
+        "$oid": "653597f2b3d9cba3d452df0c"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1B",
+      "desks": 22,
+      "meeting_rooms": 4,
+      "_id": {
+        "$oid": "653597f2b3d9cba3d452df0e"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2B",
+      "desks": 16,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "653597f2b3d9cba3d452df10"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3B",
+      "desks": 19,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "653597f2b3d9cba3d452df12"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1C",
+      "desks": 25,
+      "meeting_rooms": 5,
+      "_id": {
+        "$oid": "653597f2b3d9cba3d452df14"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2C",
+      "desks": 17,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "653597f2b3d9cba3d452df16"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3C",
+      "desks": 20,
+      "meeting_rooms": 4,
+      "_id": {
+        "$oid": "653597f2b3d9cba3d452df18"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 4,
+      "floor_section": "Sección 4",
+      "nickname": "Piso 4C",
+      "desks": 21,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "653597f2b3d9cba3d452df1a"
+      },
+      "__v": 0
+    }
+  ],
+  "status": "string",
+  "type": "string",
+  "address": "string",
+  "city": "string",
+  "country": "string",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65359818b3d9cba3d452df1d"
+  },
+  "name": "The Dark One",
+  "nickname": "Oscurantis Obsidiana",
+  "floors": [
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1A",
+      "desks": 20,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "65359818b3d9cba3d452df1e"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2A",
+      "desks": 15,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "65359818b3d9cba3d452df20"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3A",
+      "desks": 18,
+      "meeting_rooms": 1,
+      "_id": {
+        "$oid": "65359818b3d9cba3d452df22"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1B",
+      "desks": 22,
+      "meeting_rooms": 4,
+      "_id": {
+        "$oid": "65359818b3d9cba3d452df24"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2B",
+      "desks": 16,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "65359818b3d9cba3d452df26"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3B",
+      "desks": 19,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "65359818b3d9cba3d452df28"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1C",
+      "desks": 25,
+      "meeting_rooms": 5,
+      "_id": {
+        "$oid": "65359818b3d9cba3d452df2a"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2C",
+      "desks": 17,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "65359818b3d9cba3d452df2c"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3C",
+      "desks": 20,
+      "meeting_rooms": 4,
+      "_id": {
+        "$oid": "65359818b3d9cba3d452df2e"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 4,
+      "floor_section": "Sección 4",
+      "nickname": "Piso 4C",
+      "desks": 21,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "65359818b3d9cba3d452df30"
+      },
+      "__v": 0
+    }
+  ],
+  "status": "string",
+  "type": "string",
+  "address": "string",
+  "city": "string",
+  "country": "string",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6535983fb3d9cba3d452df33"
+  },
+  "name": "The Magnus",
+  "nickname": "Magnum Antiquorum Romanum",
+  "floors": [
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1A",
+      "desks": 20,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "6535983fb3d9cba3d452df34"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2A",
+      "desks": 15,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "6535983fb3d9cba3d452df36"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3A",
+      "desks": 18,
+      "meeting_rooms": 1,
+      "_id": {
+        "$oid": "6535983fb3d9cba3d452df38"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1B",
+      "desks": 22,
+      "meeting_rooms": 4,
+      "_id": {
+        "$oid": "6535983fb3d9cba3d452df3a"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2B",
+      "desks": 16,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "6535983fb3d9cba3d452df3c"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3B",
+      "desks": 19,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "6535983fb3d9cba3d452df3e"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1C",
+      "desks": 25,
+      "meeting_rooms": 5,
+      "_id": {
+        "$oid": "6535983fb3d9cba3d452df40"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2C",
+      "desks": 17,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "6535983fb3d9cba3d452df42"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3C",
+      "desks": 20,
+      "meeting_rooms": 4,
+      "_id": {
+        "$oid": "6535983fb3d9cba3d452df44"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 4,
+      "floor_section": "Sección 4",
+      "nickname": "Piso 4C",
+      "desks": 21,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "6535983fb3d9cba3d452df46"
+      },
+      "__v": 0
+    }
+  ],
+  "status": "string",
+  "type": "string",
+  "address": "string",
+  "city": "string",
+  "country": "string",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6535985eb3d9cba3d452df49"
+  },
+  "name": "The Spartan",
+  "nickname": "Old Greek Warlord",
+  "floors": [
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1A",
+      "desks": 20,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "6535985eb3d9cba3d452df4a"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2A",
+      "desks": 15,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "6535985eb3d9cba3d452df4c"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3A",
+      "desks": 18,
+      "meeting_rooms": 1,
+      "_id": {
+        "$oid": "6535985eb3d9cba3d452df4e"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1B",
+      "desks": 22,
+      "meeting_rooms": 4,
+      "_id": {
+        "$oid": "6535985eb3d9cba3d452df50"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2B",
+      "desks": 16,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "6535985eb3d9cba3d452df52"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3B",
+      "desks": 19,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "6535985eb3d9cba3d452df54"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 1,
+      "floor_section": "Sección 1",
+      "nickname": "Piso 1C",
+      "desks": 25,
+      "meeting_rooms": 5,
+      "_id": {
+        "$oid": "6535985eb3d9cba3d452df56"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 2,
+      "floor_section": "Sección 2",
+      "nickname": "Piso 2C",
+      "desks": 17,
+      "meeting_rooms": 2,
+      "_id": {
+        "$oid": "6535985eb3d9cba3d452df58"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 3,
+      "floor_section": "Sección 3",
+      "nickname": "Piso 3C",
+      "desks": 20,
+      "meeting_rooms": 4,
+      "_id": {
+        "$oid": "6535985eb3d9cba3d452df5a"
+      },
+      "__v": 0
+    },
+    {
+      "floor_number": 4,
+      "floor_section": "Sección 4",
+      "nickname": "Piso 4C",
+      "desks": 21,
+      "meeting_rooms": 3,
+      "_id": {
+        "$oid": "6535985eb3d9cba3d452df5c"
+      },
+      "__v": 0
+    }
+  ],
+  "status": "string",
+  "type": "string",
+  "address": "string",
+  "city": "string",
+  "country": "string",
+  "__v": 0
+}]
