@@ -1,6 +1,9 @@
 [{
   "_id": {
-    "$oid": "653597f2b3d9cba3d452df08"
+    "$oid": "6536dd5510dc428e2e7706dd"
+  },
+  "building_id": {
+    "$oid": "6536dd5510dc428e2e7706dc"
   },
   "floor_number": 1,
   "floor_section": "Sección 1",
@@ -11,7 +14,10 @@
 },
 {
   "_id": {
-    "$oid": "653597f2b3d9cba3d452df0a"
+    "$oid": "6536dd5510dc428e2e7706df"
+  },
+  "building_id": {
+    "$oid": "6536dd5510dc428e2e7706dc"
   },
   "floor_number": 2,
   "floor_section": "Sección 2",
@@ -22,7 +28,10 @@
 },
 {
   "_id": {
-    "$oid": "653597f2b3d9cba3d452df0c"
+    "$oid": "6536dd5510dc428e2e7706e1"
+  },
+  "building_id": {
+    "$oid": "6536dd5510dc428e2e7706dc"
   },
   "floor_number": 3,
   "floor_section": "Sección 3",
@@ -33,7 +42,10 @@
 },
 {
   "_id": {
-    "$oid": "653597f2b3d9cba3d452df0e"
+    "$oid": "6536dd5510dc428e2e7706e3"
+  },
+  "building_id": {
+    "$oid": "6536dd5510dc428e2e7706dc"
   },
   "floor_number": 1,
   "floor_section": "Sección 1",
@@ -44,7 +56,10 @@
 },
 {
   "_id": {
-    "$oid": "653597f2b3d9cba3d452df10"
+    "$oid": "6536dd5510dc428e2e7706e5"
+  },
+  "building_id": {
+    "$oid": "6536dd5510dc428e2e7706dc"
   },
   "floor_number": 2,
   "floor_section": "Sección 2",
@@ -55,7 +70,10 @@
 },
 {
   "_id": {
-    "$oid": "653597f2b3d9cba3d452df12"
+    "$oid": "6536dd5510dc428e2e7706e7"
+  },
+  "building_id": {
+    "$oid": "6536dd5510dc428e2e7706dc"
   },
   "floor_number": 3,
   "floor_section": "Sección 3",
@@ -66,7 +84,10 @@
 },
 {
   "_id": {
-    "$oid": "653597f2b3d9cba3d452df14"
+    "$oid": "6536dd5510dc428e2e7706e9"
+  },
+  "building_id": {
+    "$oid": "6536dd5510dc428e2e7706dc"
   },
   "floor_number": 1,
   "floor_section": "Sección 1",
@@ -77,7 +98,10 @@
 },
 {
   "_id": {
-    "$oid": "653597f2b3d9cba3d452df16"
+    "$oid": "6536dd5510dc428e2e7706eb"
+  },
+  "building_id": {
+    "$oid": "6536dd5510dc428e2e7706dc"
   },
   "floor_number": 2,
   "floor_section": "Sección 2",
@@ -88,7 +112,10 @@
 },
 {
   "_id": {
-    "$oid": "653597f2b3d9cba3d452df18"
+    "$oid": "6536dd5510dc428e2e7706ed"
+  },
+  "building_id": {
+    "$oid": "6536dd5510dc428e2e7706dc"
   },
   "floor_number": 3,
   "floor_section": "Sección 3",
@@ -99,7 +126,10 @@
 },
 {
   "_id": {
-    "$oid": "653597f2b3d9cba3d452df1a"
+    "$oid": "6536dd5510dc428e2e7706ef"
+  },
+  "building_id": {
+    "$oid": "6536dd5510dc428e2e7706dc"
   },
   "floor_number": 4,
   "floor_section": "Sección 4",
@@ -110,7 +140,10 @@
 },
 {
   "_id": {
-    "$oid": "65359818b3d9cba3d452df1e"
+    "$oid": "6536dd5c10dc428e2e7706f3"
+  },
+  "building_id": {
+    "$oid": "6536dd5c10dc428e2e7706f2"
   },
   "floor_number": 1,
   "floor_section": "Sección 1",
@@ -121,7 +154,10 @@
 },
 {
   "_id": {
-    "$oid": "65359818b3d9cba3d452df20"
+    "$oid": "6536dd5c10dc428e2e7706f5"
+  },
+  "building_id": {
+    "$oid": "6536dd5c10dc428e2e7706f2"
   },
   "floor_number": 2,
   "floor_section": "Sección 2",
@@ -132,7 +168,10 @@
 },
 {
   "_id": {
-    "$oid": "65359818b3d9cba3d452df22"
+    "$oid": "6536dd5c10dc428e2e7706f7"
+  },
+  "building_id": {
+    "$oid": "6536dd5c10dc428e2e7706f2"
   },
   "floor_number": 3,
   "floor_section": "Sección 3",
@@ -143,7 +182,10 @@
 },
 {
   "_id": {
-    "$oid": "65359818b3d9cba3d452df24"
+    "$oid": "6536dd5c10dc428e2e7706f9"
+  },
+  "building_id": {
+    "$oid": "6536dd5c10dc428e2e7706f2"
   },
   "floor_number": 1,
   "floor_section": "Sección 1",
@@ -154,7 +196,10 @@
 },
 {
   "_id": {
-    "$oid": "65359818b3d9cba3d452df26"
+    "$oid": "6536dd5c10dc428e2e7706fb"
+  },
+  "building_id": {
+    "$oid": "6536dd5c10dc428e2e7706f2"
   },
   "floor_number": 2,
   "floor_section": "Sección 2",
@@ -165,7 +210,10 @@
 },
 {
   "_id": {
-    "$oid": "65359818b3d9cba3d452df28"
+    "$oid": "6536dd5c10dc428e2e7706fd"
+  },
+  "building_id": {
+    "$oid": "6536dd5c10dc428e2e7706f2"
   },
   "floor_number": 3,
   "floor_section": "Sección 3",
@@ -176,7 +224,10 @@
 },
 {
   "_id": {
-    "$oid": "65359818b3d9cba3d452df2a"
+    "$oid": "6536dd5c10dc428e2e7706ff"
+  },
+  "building_id": {
+    "$oid": "6536dd5c10dc428e2e7706f2"
   },
   "floor_number": 1,
   "floor_section": "Sección 1",
@@ -187,7 +238,10 @@
 },
 {
   "_id": {
-    "$oid": "65359818b3d9cba3d452df2c"
+    "$oid": "6536dd5c10dc428e2e770701"
+  },
+  "building_id": {
+    "$oid": "6536dd5c10dc428e2e7706f2"
   },
   "floor_number": 2,
   "floor_section": "Sección 2",
@@ -198,7 +252,10 @@
 },
 {
   "_id": {
-    "$oid": "65359818b3d9cba3d452df2e"
+    "$oid": "6536dd5c10dc428e2e770703"
+  },
+  "building_id": {
+    "$oid": "6536dd5c10dc428e2e7706f2"
   },
   "floor_number": 3,
   "floor_section": "Sección 3",
@@ -209,7 +266,10 @@
 },
 {
   "_id": {
-    "$oid": "65359818b3d9cba3d452df30"
+    "$oid": "6536dd5c10dc428e2e770705"
+  },
+  "building_id": {
+    "$oid": "6536dd5c10dc428e2e7706f2"
   },
   "floor_number": 4,
   "floor_section": "Sección 4",
@@ -220,7 +280,10 @@
 },
 {
   "_id": {
-    "$oid": "6535983fb3d9cba3d452df34"
+    "$oid": "6536dd6810dc428e2e770709"
+  },
+  "building_id": {
+    "$oid": "6536dd6810dc428e2e770708"
   },
   "floor_number": 1,
   "floor_section": "Sección 1",
@@ -231,7 +294,10 @@
 },
 {
   "_id": {
-    "$oid": "6535983fb3d9cba3d452df36"
+    "$oid": "6536dd6810dc428e2e77070b"
+  },
+  "building_id": {
+    "$oid": "6536dd6810dc428e2e770708"
   },
   "floor_number": 2,
   "floor_section": "Sección 2",
@@ -242,7 +308,10 @@
 },
 {
   "_id": {
-    "$oid": "6535983fb3d9cba3d452df38"
+    "$oid": "6536dd6810dc428e2e77070d"
+  },
+  "building_id": {
+    "$oid": "6536dd6810dc428e2e770708"
   },
   "floor_number": 3,
   "floor_section": "Sección 3",
@@ -253,7 +322,10 @@
 },
 {
   "_id": {
-    "$oid": "6535983fb3d9cba3d452df3a"
+    "$oid": "6536dd6810dc428e2e77070f"
+  },
+  "building_id": {
+    "$oid": "6536dd6810dc428e2e770708"
   },
   "floor_number": 1,
   "floor_section": "Sección 1",
@@ -264,7 +336,10 @@
 },
 {
   "_id": {
-    "$oid": "6535983fb3d9cba3d452df3c"
+    "$oid": "6536dd6810dc428e2e770711"
+  },
+  "building_id": {
+    "$oid": "6536dd6810dc428e2e770708"
   },
   "floor_number": 2,
   "floor_section": "Sección 2",
@@ -275,7 +350,10 @@
 },
 {
   "_id": {
-    "$oid": "6535983fb3d9cba3d452df3e"
+    "$oid": "6536dd6810dc428e2e770713"
+  },
+  "building_id": {
+    "$oid": "6536dd6810dc428e2e770708"
   },
   "floor_number": 3,
   "floor_section": "Sección 3",
@@ -286,7 +364,10 @@
 },
 {
   "_id": {
-    "$oid": "6535983fb3d9cba3d452df40"
+    "$oid": "6536dd6810dc428e2e770715"
+  },
+  "building_id": {
+    "$oid": "6536dd6810dc428e2e770708"
   },
   "floor_number": 1,
   "floor_section": "Sección 1",
@@ -297,7 +378,10 @@
 },
 {
   "_id": {
-    "$oid": "6535983fb3d9cba3d452df42"
+    "$oid": "6536dd6810dc428e2e770717"
+  },
+  "building_id": {
+    "$oid": "6536dd6810dc428e2e770708"
   },
   "floor_number": 2,
   "floor_section": "Sección 2",
@@ -308,7 +392,10 @@
 },
 {
   "_id": {
-    "$oid": "6535983fb3d9cba3d452df44"
+    "$oid": "6536dd6810dc428e2e770719"
+  },
+  "building_id": {
+    "$oid": "6536dd6810dc428e2e770708"
   },
   "floor_number": 3,
   "floor_section": "Sección 3",
@@ -319,117 +406,10 @@
 },
 {
   "_id": {
-    "$oid": "6535983fb3d9cba3d452df46"
+    "$oid": "6536dd6810dc428e2e77071b"
   },
-  "floor_number": 4,
-  "floor_section": "Sección 4",
-  "nickname": "Piso 4C",
-  "desks": 21,
-  "meeting_rooms": 3,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6535985eb3d9cba3d452df4a"
-  },
-  "floor_number": 1,
-  "floor_section": "Sección 1",
-  "nickname": "Piso 1A",
-  "desks": 20,
-  "meeting_rooms": 2,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6535985eb3d9cba3d452df4c"
-  },
-  "floor_number": 2,
-  "floor_section": "Sección 2",
-  "nickname": "Piso 2A",
-  "desks": 15,
-  "meeting_rooms": 3,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6535985eb3d9cba3d452df4e"
-  },
-  "floor_number": 3,
-  "floor_section": "Sección 3",
-  "nickname": "Piso 3A",
-  "desks": 18,
-  "meeting_rooms": 1,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6535985eb3d9cba3d452df50"
-  },
-  "floor_number": 1,
-  "floor_section": "Sección 1",
-  "nickname": "Piso 1B",
-  "desks": 22,
-  "meeting_rooms": 4,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6535985eb3d9cba3d452df52"
-  },
-  "floor_number": 2,
-  "floor_section": "Sección 2",
-  "nickname": "Piso 2B",
-  "desks": 16,
-  "meeting_rooms": 2,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6535985eb3d9cba3d452df54"
-  },
-  "floor_number": 3,
-  "floor_section": "Sección 3",
-  "nickname": "Piso 3B",
-  "desks": 19,
-  "meeting_rooms": 3,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6535985eb3d9cba3d452df56"
-  },
-  "floor_number": 1,
-  "floor_section": "Sección 1",
-  "nickname": "Piso 1C",
-  "desks": 25,
-  "meeting_rooms": 5,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6535985eb3d9cba3d452df58"
-  },
-  "floor_number": 2,
-  "floor_section": "Sección 2",
-  "nickname": "Piso 2C",
-  "desks": 17,
-  "meeting_rooms": 2,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6535985eb3d9cba3d452df5a"
-  },
-  "floor_number": 3,
-  "floor_section": "Sección 3",
-  "nickname": "Piso 3C",
-  "desks": 20,
-  "meeting_rooms": 4,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "6535985eb3d9cba3d452df5c"
+  "building_id": {
+    "$oid": "6536dd6810dc428e2e770708"
   },
   "floor_number": 4,
   "floor_section": "Sección 4",
