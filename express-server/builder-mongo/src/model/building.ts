@@ -1,8 +1,7 @@
 import mongoose, { Schema } from 'mongoose';
 import { IFloor } from './floor';
 
-export interface IBuilding {
-  _id?: string;
+export interface IBuilding extends Document {
   name: string;
   nickname: string;
   floors: IFloor[];
@@ -13,10 +12,18 @@ export interface IBuilding {
   country: string;
 }
 
+const floorSchema = new Schema<IFloor>({
+  floor_number: { type: Number, required: true },
+  floor_section: { type: String, required: true },
+  nickname: { type: String, required: true },
+  desks: { type: Number, required: true },
+  meeting_rooms: { type: Number, required: true },
+});
+
 const BuildingSchema = new Schema<IBuilding>({
   name: {type: String, required: true},
   nickname: {type: String, required: true},
-  floors: {type: Array, required: true},
+  floors: [floorSchema],
   status: {type: String, required: true},
   type: {type: String, required: true},
   address: {type: String, required: true},
