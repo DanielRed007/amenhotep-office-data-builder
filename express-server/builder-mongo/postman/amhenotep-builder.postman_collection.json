@@ -36,7 +36,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"The Big Void\",\n  \"nickname\": \"Old Greek Warlord\",\n  \"floors\": [\n  {\n    \"floor_number\": 1,\n    \"floor_section\": \"Sección 1\",\n    \"nickname\": \"Piso 1A\",\n    \"desks\": 20,\n    \"meeting_rooms\": 2\n  },\n  {\n    \"floor_number\": 2,\n    \"floor_section\": \"Sección 2\",\n    \"nickname\": \"Piso 2A\",\n    \"desks\": 15,\n    \"meeting_rooms\": 3\n  },\n  {\n    \"floor_number\": 3,\n    \"floor_section\": \"Sección 3\",\n    \"nickname\": \"Piso 3A\",\n    \"desks\": 18,\n    \"meeting_rooms\": 1\n  },\n  {\n    \"floor_number\": 1,\n    \"floor_section\": \"Sección 1\",\n    \"nickname\": \"Piso 1B\",\n    \"desks\": 22,\n    \"meeting_rooms\": 4\n  },\n  {\n    \"floor_number\": 2,\n    \"floor_section\": \"Sección 2\",\n    \"nickname\": \"Piso 2B\",\n    \"desks\": 16,\n    \"meeting_rooms\": 2\n  },\n  {\n    \"floor_number\": 3,\n    \"floor_section\": \"Sección 3\",\n    \"nickname\": \"Piso 3B\",\n    \"desks\": 19,\n    \"meeting_rooms\": 3\n  },\n  {\n    \"floor_number\": 1,\n    \"floor_section\": \"Sección 1\",\n    \"nickname\": \"Piso 1C\",\n    \"desks\": 25,\n    \"meeting_rooms\": 5\n  },\n  {\n    \"floor_number\": 2,\n    \"floor_section\": \"Sección 2\",\n    \"nickname\": \"Piso 2C\",\n    \"desks\": 17,\n    \"meeting_rooms\": 2\n  },\n  {\n    \"floor_number\": 3,\n    \"floor_section\": \"Sección 3\",\n    \"nickname\": \"Piso 3C\",\n    \"desks\": 20,\n    \"meeting_rooms\": 4\n  },\n  {\n    \"floor_number\": 4,\n    \"floor_section\": \"Sección 4\",\n    \"nickname\": \"Piso 4C\",\n    \"desks\": 21,\n    \"meeting_rooms\": 3\n  }\n],\n  \"status\": \"string\",\n  \"type\": \"string\",\n  \"address\": \"string\",\n  \"city\": \"string\",\n  \"country\": \"string\"\n}",
+							"raw": "{\n  \"name\": \"string\",\n  \"nickname\": \"string\",\n  \"floors\": \"string[]\",\n  \"status\": \"string\",\n  \"type\": \"string\",\n  \"address\": \"string\",\n  \"city\": \"string\",\n  \"country\": \"string\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -64,7 +64,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/buildings/{{id}}",
+							"raw": "http://localhost:3000/api/buildings/{{buildingId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -73,7 +73,7 @@
 							"path": [
 								"api",
 								"buildings",
-								"{{id}}"
+								"{{buildingId}}"
 							]
 						}
 					},
@@ -86,7 +86,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"floor_number\": 1,\n    \"floor_section\": \"Sección 1\",\n    \"nickname\": \"Piso 1A\",\n    \"desks\": 20,\n    \"meeting_rooms\": 2\n}",
+							"raw": "{\n  \"name\": \"The Aleister\",\n  \"nickname\": \"The Third\",\n  \"floors\": \"string[]\",\n  \"status\": \"string\",\n  \"type\": \"string\",\n  \"address\": \"string\",\n  \"city\": \"string\",\n  \"country\": \"string\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -94,7 +94,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/buildings/6536f0e40cf475414541137d",
+							"raw": "http://localhost:3000/api/buildings/{{buildingId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -103,7 +103,7 @@
 							"path": [
 								"api",
 								"buildings",
-								"6536f0e40cf475414541137d"
+								"{{buildingId}}"
 							]
 						}
 					},
@@ -115,7 +115,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/buildings/{{id}}",
+							"raw": "http://localhost:3000/api/buildings/{{buildingId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -124,7 +124,7 @@
 							"path": [
 								"api",
 								"buildings",
-								"{{id}}"
+								"{{buildingId}}"
 							]
 						}
 					},
@@ -136,6 +136,28 @@
 		{
 			"name": "floors",
 			"item": [
+				{
+					"name": "Get Floor by Building Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/floors/building/{{buildingId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"floors",
+								"building",
+								"{{buildingId}}"
+							]
+						}
+					},
+					"response": []
+				},
 				{
 					"name": "Get Floors",
 					"request": {
@@ -162,7 +184,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/floors/6536f0e40cf4754145411388",
+							"raw": "http://localhost:3000/api/floors/{{floorId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -171,7 +193,7 @@
 							"path": [
 								"api",
 								"floors",
-								"6536f0e40cf4754145411388"
+								"{{floorId}}"
 							]
 						}
 					},
@@ -184,7 +206,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"building_id\": \"6536f0e40cf475414541137d\",\n    \"floor_number\": 1,\n    \"floor_section\": \"Sección 1\",\n    \"nickname\": \"Piso 1A\",\n    \"desks\": 20,\n    \"meeting_rooms\": 2\n}",
+							"raw": "{\n    \"building_id\": \"6536f0e40cf475414541137d\",\n    \"floor_number\": 1,\n    \"floor_section\": \"Sección 1\",\n    \"nickname\": \"Monchitos 1A\",\n    \"desks\": 20,\n    \"meeting_rooms\": 2\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -192,7 +214,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/floors",
+							"raw": "http://localhost:3000/api/floors/{{buildingId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -200,7 +222,8 @@
 							"port": "3000",
 							"path": [
 								"api",
-								"floors"
+								"floors",
+								"{{buildingId}}"
 							]
 						}
 					},
@@ -221,7 +244,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/floors/6536f0e40cf4754145411388",
+							"raw": "http://localhost:3000/api/floors/{{floorId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -230,7 +253,7 @@
 							"path": [
 								"api",
 								"floors",
-								"6536f0e40cf4754145411388"
+								"{{floorId}}"
 							]
 						}
 					},
@@ -242,7 +265,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/floors/6536f0e40cf4754145411388",
+							"raw": "http://localhost:3000/api/floors/{{floorId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -251,7 +274,7 @@
 							"path": [
 								"api",
 								"floors",
-								"6536f0e40cf4754145411388"
+								"{{floorId}}"
 							]
 						}
 					},
@@ -282,8 +305,13 @@
 	],
 	"variable": [
 		{
-			"key": "id",
-			"value": "65352de0c260038cdcf60abe",
+			"key": "floorId",
+			"value": "6536f0e40cf4754145411388",
+			"type": "string"
+		},
+		{
+			"key": "buildingId",
+			"value": "6536f0e40cf475414541137d",
 			"type": "string"
 		}
 	]

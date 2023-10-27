@@ -35,6 +35,25 @@ export const getFloorById = async (req: Request, res: Response) => {
   }
 }
 
+export const getFloorsByBuildingId = async (req: Request, res: Response) => {
+  try {
+    const buildingId = req.params.buildingId;
+
+    if(!buildingId){
+      return res.status(400).json({ error: 'Building not found' });
+    }
+
+    const floor = await Floor.find({building_id: buildingId});
+
+    if (!floor) {
+      return res.status(404).json({ error: 'Floor not found' });
+    }
+    res.json(floor);
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+}
+
 export const editFloor = async (req: Request, res: Response) => {
   try {
     const updatedFloor = await Floor.findByIdAndUpdate(req.params.id, req.body, {
