@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import BuildingRoutes from "./route/building.route";
+import FloorsRoutes from "./route/floors.route";
 
 const app = express();
 const PORT = 3000;
@@ -8,6 +9,7 @@ const MONGO_URI = 'mongodb://localhost:27017/buildings';
 
 app.use(express.json());
 app.use("/api/buildings", BuildingRoutes);
+app.use("/api/floors", FloorsRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

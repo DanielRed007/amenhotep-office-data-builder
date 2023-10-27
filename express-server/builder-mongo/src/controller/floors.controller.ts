@@ -1,20 +1,11 @@
 import { Request, Response } from 'express';
 import Floor from '../model/floor';
-import Building from '../model/building';
 
 export const createNewFloor = async (req: Request, res: Response) => {
   try {
-    const buildingId = req.params.buildingId;
-    const floor = req.body;
-    const building = await Building.findById(buildingId);
+    const floorData = req.body;
 
-    if(!building){
-      res.status(404).json({ error: "Building not found" });
-    }
-
-    building?.floors.push(floor);
-    building?.save();
-    const newFloor = new Floor(floor);
+    const newFloor = new Floor(floorData);
 
     const savedFloor = await newFloor.save();
     res.status(201).json(savedFloor);
