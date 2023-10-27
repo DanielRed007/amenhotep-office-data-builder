@@ -64,7 +64,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/buildings/{{id}}",
+							"raw": "http://localhost:3000/api/buildings/{{buildingId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -73,7 +73,7 @@
 							"path": [
 								"api",
 								"buildings",
-								"{{id}}"
+								"{{buildingId}}"
 							]
 						}
 					},
@@ -94,7 +94,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/buildings/653538b49e49b5120c0ab8de",
+							"raw": "http://localhost:3000/api/buildings/{{buildingId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -103,7 +103,7 @@
 							"path": [
 								"api",
 								"buildings",
-								"653538b49e49b5120c0ab8de"
+								"{{buildingId}}"
 							]
 						}
 					},
@@ -115,7 +115,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/buildings/{{id}}",
+							"raw": "http://localhost:3000/api/buildings/{{buildingId}}",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -124,7 +124,7 @@
 							"path": [
 								"api",
 								"buildings",
-								"{{id}}"
+								"{{buildingId}}"
 							]
 						}
 					},
@@ -132,6 +132,155 @@
 				}
 			],
 			"description": "Environment Variables for the Amenhotep Builder"
+		},
+		{
+			"name": "floors",
+			"item": [
+				{
+					"name": "Get Floor by Building Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/floors/building/{{buildingId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"floors",
+								"building",
+								"{{buildingId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Floors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/floors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"floors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Floor by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/floors/{{floorId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"floors",
+								"{{floorId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Floor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"building_id\": \"6536f0e40cf475414541137d\",\n    \"floor_number\": 1,\n    \"floor_section\": \"Sección 1\",\n    \"nickname\": \"Monchitos 1A\",\n    \"desks\": 20,\n    \"meeting_rooms\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/floors/{{buildingId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"floors",
+								"{{buildingId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Floor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"6536f0e40cf4754145411388\",\n    \"building_id\": \"6536f0e40cf475414541137d\",\n    \"floor_number\": 1,\n    \"floor_section\": \"Sección 1 - The Light One\",\n    \"nickname\": \"Piso 1A\",\n    \"desks\": 20,\n    \"meeting_rooms\": 2,\n    \"__v\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/floors/{{floorId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"floors",
+								"{{floorId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Floor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/floors/{{floorId}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"floors",
+								"{{floorId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
@@ -156,8 +305,13 @@
 	],
 	"variable": [
 		{
-			"key": "id",
-			"value": "65352de0c260038cdcf60abe",
+			"key": "floorId",
+			"value": "6536f0e40cf4754145411388",
+			"type": "string"
+		},
+		{
+			"key": "buildingId",
+			"value": "6536f0e40cf475414541137d",
 			"type": "string"
 		}
 	]
