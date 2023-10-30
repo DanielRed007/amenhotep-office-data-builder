@@ -43,12 +43,13 @@ export const getFloorsByBuildingId = async (req: Request, res: Response) => {
       return res.status(400).json({ error: 'Building not found' });
     }
 
-    const floor = await Floor.find({building_id: buildingId});
+    const floors = await Floor.find({building_id: buildingId});
 
-    if (!floor) {
+    if (!floors) {
       return res.status(404).json({ error: 'Floor not found' });
     }
-    res.json(floor);
+    
+    res.json(floors);
   } catch (error: any) {
     res.status(500).json({ error: error.message });
   }
