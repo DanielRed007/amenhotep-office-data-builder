@@ -1,5 +1,7 @@
 notes/
 express-server/builder-mongo/node_modules
 express-server/builder-mongo/package-lock.json
+
 express-server/builder-postgres/node_modules
 express-server/builder-postgres/.env
+express-server/builder-postgres/package-lock.json
