@@ -1,12 +1,10 @@
 import { Application } from "express";
-import homeRoutes from "./home.routes";
-import tutorialRoutes from "./tutorials.routes";
 import buildingRoutes from "./building.routes";
+import floorsRoutes from "./floor.routes";
 
 export default class Routes {
   constructor(app: Application) {
-    app.use("/api", homeRoutes);
-    app.use("/api/tutorials", tutorialRoutes);
-    app.use("/api/buildings", buildingRoutes);     
+    app.use("/api/buildings", buildingRoutes);
+    app.use("/api/floors", floorsRoutes);      
   }
 }

@@ -1,9 +1,9 @@
 import { Router } from "express";
-import TutorialController from "../controllers/tutorials.controllers";
+import FloorController from "../controllers/floor.controller";
 
-class TutorialRoutes {
-  router = Router();
-  controller = new TutorialController();
+class FloorRoutes {
+  router: Router = Router();
+  controller = new FloorController();
 
   constructor() {
     this.intializeRoutes();
@@ -23,4 +23,4 @@ class TutorialRoutes {
   }
 }
 
-export default new TutorialRoutes().router;
+export default new FloorRoutes().router;

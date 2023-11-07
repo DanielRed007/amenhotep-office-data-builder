@@ -25,7 +25,7 @@ class BuildingRepository implements IBuildingRepository {
             country: building.country,
           });
         } catch (err) {
-          throw new Error("Failed to create Tutorial!");
+          throw new Error("Failed to create Building!");
         }
     }
 
