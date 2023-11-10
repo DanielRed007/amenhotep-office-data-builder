@@ -22,10 +22,7 @@ export default class BuildingController {
     try {
       const buildings = await buildingRepository.retrieveAll();
       
-      res.status(200).json({
-        message: "findAll OK",
-        ...buildings
-      });
+      res.status(200).json({buildings});
     } catch (err) {
       res.status(500).json({
         message: err
@@ -36,22 +33,14 @@ export default class BuildingController {
   async findOne(req: Request, res: Response) {
     try {
       const id = req.params.id;
-      console.log({id});
 
       const building = await buildingRepository.retrieveById(id);
 
-      console.log({id,building});
-
       if(!building){
-        res.status(404).json({
-          message: "Building not Found",
-        });
+        throw Error("Building Not Found");
+      } else {
+        res.status(200).json({building});
       }
-
-      res.status(200).json({
-        message: "findOne OK",
-        building: building
-      });
     } catch (err) {
       res.status(500).json({
         message: err
@@ -61,6 +50,16 @@ export default class BuildingController {
 
   async update(req: Request, res: Response) {
     try {
+      const id = req.params.id;
+
+      const building = await buildingRepository.retrieveById(id);
+
+      if(!building){
+        throw Error("Building Not Found");
+      }
+
+      console.log({building});
+
       res.status(200).json({
         message: "update OK",
         reqParamId: req.params.id,
@@ -68,7 +67,7 @@ export default class BuildingController {
       });
     } catch (err) {
       res.status(500).json({
-        message: "Internal Server Error!"
+        message: err
       });
     }
   }

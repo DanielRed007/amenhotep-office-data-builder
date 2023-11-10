@@ -4,9 +4,9 @@ import { Op } from "sequelize";
 interface IBuildingRepository {
   save(building: Building): Promise<Building>;
   retrieveAll(searchParams?: {title: string, published: boolean}): Promise<Building[]>;
-  retrieveById(buildingId: string): any;
-  update(building: Building): Promise<number>;
-  delete(buildingId: number): Promise<number>;
+  retrieveById(id: string): Promise<Building | null>;
+  update(id: string): Promise<Building | null>;
+  delete(id: number): Promise<number>;
   deleteAll(): Promise<number>;
 }
 
@@ -29,7 +29,7 @@ class BuildingRepository implements IBuildingRepository {
         }
     }
 
-    async retrieveAll(searchParams?: {title?: string, published?: boolean}): Promise<any> {
+    async retrieveAll(searchParams?: {title?: string, published?: boolean}): Promise<Building[]> {
         try {
           let condition: any = {};
       
@@ -40,23 +40,22 @@ class BuildingRepository implements IBuildingRepository {
 
           return await Building.findAll();
         } catch (error) {
-          return error;
+          throw error;
         }
     }
 
-    async retrieveById(buildingId: string) {
+    async retrieveById(buildingId: string): Promise<Building | null> {
         try {
-          console.log({buildingId});
           return await Building.findOne({ where: { id: String(buildingId) } });
         } catch (error) {
           console.log(error);
-          throw new Error("Failed to retrieve Buildings!");
+          throw error;
         }
     }
 
     async update(Building: Building): Promise<any> {
         const { id } = Building;
-      
+
         try {
           const affectedRows = await Building.update(
             { go: "up!" },
