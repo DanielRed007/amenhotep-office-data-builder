@@ -37,7 +37,7 @@ export default class BuildingController {
       const building = await buildingRepository.retrieveById(id);
 
       if(!building){
-        throw Error("Building Not Found");
+        return res.status(404).json({error: "building not found"});
       } else {
         res.status(200).json({building});
       }
@@ -51,6 +51,7 @@ export default class BuildingController {
   async update(req: Request, res: Response) {
     try {
       const id = req.params.id;
+      const updatedBuilding = req.body;
 
       const building = await buildingRepository.retrieveById(id);
 
@@ -58,12 +59,10 @@ export default class BuildingController {
         throw Error("Building Not Found");
       }
 
-      console.log({building});
+      await buildingRepository.update(id,updatedBuilding);
 
       res.status(200).json({
-        message: "update OK",
-        reqParamId: req.params.id,
-        reqBody: req.body
+        updated: updatedBuilding,
       });
     } catch (err) {
       res.status(500).json({
@@ -74,6 +73,10 @@ export default class BuildingController {
 
   async delete(req: Request, res: Response) {
     try {
+      const id = req.params.id;
+
+      await buildingRepository.delete(id);
+
       res.status(200).json({
         message: "delete OK",
         reqParamId: req.params.id

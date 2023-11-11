@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import Floor from "../models/floor.model";
 import floorRepository from "../repositories/floor.repository";
+import buildingRepository from "../repositories/building.repository";
 
 export default class BuildingController {
   async create(req: Request, res: Response) {
@@ -20,12 +21,9 @@ export default class BuildingController {
 
   async findAll(req: Request, res: Response) {
     try {
-      const buildings = await floorRepository.retrieveAll();
+      const floor = await floorRepository.retrieveAll();
       
-      res.status(200).json({
-        message: "findAll OK",
-        ...buildings
-      });
+      res.status(200).json({floor});
     } catch (err) {
       res.status(500).json({
         message: err
@@ -36,22 +34,14 @@ export default class BuildingController {
   async findOne(req: Request, res: Response) {
     try {
       const id = req.params.id;
-      console.log({id});
 
-      const building = await floorRepository.retrieveById(id);
+      const floor = await floorRepository.retrieveById(id);
 
-      console.log({id,building});
-
-      if(!building){
-        res.status(404).json({
-          message: "Building not Found",
-        });
+      if(!floor){
+        return res.status(404).json({message: "Floor not Found"});
+      } else {
+        res.status(200).json({floor});
       }
-
-      res.status(200).json({
-        message: "findOne OK",
-        building: building
-      });
     } catch (err) {
       res.status(500).json({
         message: err
@@ -61,10 +51,19 @@ export default class BuildingController {
 
   async update(req: Request, res: Response) {
     try {
+      const id = req.params.id;
+      const updatedFloor = req.body;
+
+      const floor = await floorRepository.retrieveById(id);
+
+      if(!floor){
+        throw Error("Floor Not Found");
+      }
+
+      await floorRepository.update(id,updatedFloor);
+
       res.status(200).json({
-        message: "update OK",
-        reqParamId: req.params.id,
-        reqBody: req.body
+        updated: updatedFloor,
       });
     } catch (err) {
       res.status(500).json({
@@ -73,8 +72,30 @@ export default class BuildingController {
     }
   }
 
+  async updateFloorByBuildingId(req: Request, res: Response){
+    const floorId = req.params.floorId;
+    const buildingId = req.params.buildingId;
+    const updatedFloor = req.body;
+
+    const building = await buildingRepository.retrieveById(buildingId);
+
+    if(!building){
+      return res.status(404).json({message: "Building not Found"});
+    }
+
+    await floorRepository.update(floorId, updatedFloor);
+
+    res.status(200).json({
+      updated: updatedFloor,
+    });
+  }
+
   async delete(req: Request, res: Response) {
     try {
+      const id = req.params.id;
+
+      await floorRepository.delete(id);
+
       res.status(200).json({
         message: "delete OK",
         reqParamId: req.params.id

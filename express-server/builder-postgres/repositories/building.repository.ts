@@ -5,8 +5,8 @@ interface IBuildingRepository {
   save(building: Building): Promise<Building>;
   retrieveAll(searchParams?: {title: string, published: boolean}): Promise<Building[]>;
   retrieveById(id: string): Promise<Building | null>;
-  update(id: string): Promise<Building | null>;
-  delete(id: number): Promise<number>;
+  update(id: string, updatedBuilding: any): Promise<Building | null>;
+  delete(id: string): any;
   deleteAll(): Promise<number>;
 }
 
@@ -53,12 +53,11 @@ class BuildingRepository implements IBuildingRepository {
         }
     }
 
-    async update(Building: Building): Promise<any> {
-        const { id } = Building;
+    async update(id: string, building: any): Promise<any> {
 
         try {
           const affectedRows = await Building.update(
-            { go: "up!" },
+            { ...building },
             { where: { id: id } }
           );
       
@@ -68,9 +67,9 @@ class BuildingRepository implements IBuildingRepository {
         }
     }
 
-    async delete(BuildingId: number): Promise<number> {
+    async delete(id: string) {
         try {
-          const affectedRows = await Building.destroy({ where: { id: BuildingId } });
+          const affectedRows = await Building.destroy({ where: { id: id } });
       
           return affectedRows;
         } catch (error) {

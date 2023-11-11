@@ -5,8 +5,9 @@ interface IFloorRepository {
   save(floor: Floor): Promise<Floor>;
   retrieveAll(searchParams?: {title: string, published: boolean}): Promise<Floor[]>;
   retrieveById(floorId: string): any;
-  update(floor: Floor): Promise<number>;
-  delete(floorId: number): Promise<number>;
+  update(id: string, floor: any): Promise<Floor | null>;
+  delete(id: string): any;
+  delete(floorId: string): Promise<number>;
   deleteAll(): Promise<number>;
 }
 
@@ -51,12 +52,11 @@ class FloorRepository implements IFloorRepository {
         }
     }
 
-    async update(floor: Floor): Promise<any> {
-        const { id } = floor;
+    async update(id: string, floor: any): Promise<any> {
       
         try {
           const affectedRows = await Floor.update(
-            { go: "up!" },
+            { ...floor },
             { where: { id: id } }
           );
       
@@ -66,9 +66,9 @@ class FloorRepository implements IFloorRepository {
         }
     }
 
-    async delete(floorId: number): Promise<number> {
+    async delete(id: string): Promise<number> {
         try {
-          const affectedRows = await Floor.destroy({ where: { id: floorId } });
+          const affectedRows = await Floor.destroy({ where: { id: id } });
       
           return affectedRows;
         } catch (error) {

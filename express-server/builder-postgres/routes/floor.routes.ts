@@ -19,6 +19,8 @@ class FloorRoutes {
 
     this.router.put("/:id", this.controller.update);
 
+    this.router.put("/:floorId/buildings/:buildingId", this.controller.updateFloorByBuildingId);
+
     this.router.delete("/:id", this.controller.delete);
   }
 }
