@@ -24,19 +24,19 @@ describe('Building Model', () => {
 
   it('should create a building', async () => {
     const building = await Building.create({
-        "id": "3434",
-        "name": "Test Building",
-        "nickname": "Second Plaza",
-        "floors": [
-            "Floor 1",
-            "Floor 2",
-            "Floor 3"
-        ],
-        "status": "Inactive",
-        "type": "Retail",
-        "address": "456 Elm Street",
-        "city": "Smalltown",
-        "country": "United States"
+      "id": "3434",
+      "name": "Test Building",
+      "nickname": "Second Plaza",
+      "floors": [
+          "Floor 1",
+          "Floor 2",
+          "Floor 3"
+      ],
+      "status": "Inactive",
+      "type": "Retail",
+      "address": "456 Elm Street",
+      "city": "Smalltown",
+      "country": "United States"
     });
 
     expect(building.id).toBeDefined();
@@ -53,36 +53,36 @@ describe('Building Model', () => {
 
   it('should retrieve a list of buildings', async () => {
     await Building.bulkCreate([
-        {
-            "id": "5",
-            "name": "Solaris Research Center",
-            "nickname": "Clarke Plaza",
-            "floors": [
-                "Floor 1",
-                "Floor 2",
-                "Floor 3"
-            ],
-            "status": "Active",
-            "type": "Research",
-            "address": "1977 Karellen Street",
-            "city": "Euriale",
-            "country": "Japeto"
-        },
-        {
-            "id": "7",
-            "name": "Isis Underground Headquarters",
-            "nickname": "Asimov Plaza",
-            "floors": [
-                "Floor 1",
-                "Floor 2",
-                "Floor 3"
-            ],
-            "status": "Active",
-            "type": "Administrative",
-            "address": "456 Elm Street",
-            "city": "Smalltown",
-            "country": "Ganimedes"
-        }
+      {
+          "id": "5",
+          "name": "Solaris Research Center",
+          "nickname": "Clarke Plaza",
+          "floors": [
+              "Floor 1",
+              "Floor 2",
+              "Floor 3"
+          ],
+          "status": "Active",
+          "type": "Research",
+          "address": "1977 Karellen Street",
+          "city": "Euriale",
+          "country": "Japeto"
+      },
+      {
+          "id": "7",
+          "name": "Isis Underground Headquarters",
+          "nickname": "Asimov Plaza",
+          "floors": [
+              "Floor 1",
+              "Floor 2",
+              "Floor 3"
+          ],
+          "status": "Active",
+          "type": "Administrative",
+          "address": "456 Elm Street",
+          "city": "Smalltown",
+          "country": "Ganimedes"
+      }
     ]);
 
     const buildings = await Building.findAll();
