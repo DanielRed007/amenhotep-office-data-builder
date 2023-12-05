@@ -6,3 +6,6 @@ express-server/builder-postgres/node_modules
 express-server/builder-postgres/.env
 express-server/builder-postgres/package-lock.json
 express-server/builder-postgres/build
+
+express-server/builder-postgres-2/node_modules
+express-server/builder-postgres-2/.env
