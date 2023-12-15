@@ -1,4 +1,5 @@
 import Building from "../models/building.model";
+import Floor from "../models/floor.model";
 import { Op } from "sequelize";
 
 interface IBuildingRepository {
@@ -32,13 +33,16 @@ class BuildingRepository implements IBuildingRepository {
     async retrieveAll(searchParams?: {title?: string, published?: boolean}): Promise<Building[]> {
         try {
           let condition: any = {};
-      
-          if (searchParams?.published) condition.published = true;
-      
-          if (searchParams?.title)
-            condition.title = { [Op.like]: `%${searchParams.title}%` };
 
-          return await Building.findAll();
+        if (searchParams?.published) condition.published = true;
+
+        if (searchParams?.title)
+          condition.title = { [Op.like]: `%${searchParams.title}%` };
+
+        return await Building.findAll({
+          where: condition,
+          include: [Floor],
+        });
         } catch (error) {
           throw error;
         }

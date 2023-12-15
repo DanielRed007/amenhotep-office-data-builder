@@ -26,6 +26,9 @@ class Database {
       models: [Building, Floor]
     });
 
+    Building.hasMany(Floor, { foreignKey: 'buildingId' });
+    Floor.belongsTo(Building, { foreignKey: 'buildingId' });
+
     await this.sequelize
       .authenticate()
       .then(() => {
